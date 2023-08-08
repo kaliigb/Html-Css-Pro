@@ -1,0 +1,115 @@
+/* מדידות הדף */
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+/* גןף הדף */
+body {
+  font-size: 1.3rem;
+  margin: 0;
+  flex-wrap: wrap;
+}
+/* header עיצוב  */
+.header1 {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+
+  flex-wrap: wrap;
+}
+/*header עיצוב קישורים שב */
+.header1 a {
+  color: black;
+  font-size: 3rem;
+}
+header .header1 a:nth-of-type(1) i {
+  font-size: 3rem;
+}
+.tybe {
+  flex-wrap: wrap;
+  color: black;
+  text-decoration: none;
+  width: 64%;
+  /* border: solid 2px black; */
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: space-between; */
+  margin: 2rem;
+}
+.tybe a {
+  color: black;
+  text-decoration: none;
+  /* border: solid 2px red; */
+  font-weight: 500;
+}
+.contact a {
+  text-decoration: none;
+}
+/* כותרת  */
+h1 {
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+}
+/* עיצוב סוף הדף  */
+.footer {
+  background-color: black;
+  color: aliceblue;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer nav:nth-of-type(2) {
+  padding: 10px 10px;
+  width: 10%;
+
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+/* עיצוב אייקון */
+.footer nav a {
+  color: white;
+}
+.footer p {
+  color: white;
+  font-size: 1rem;
+}
+/* עיצוב רשימה */
+.footer nav:nth-of-type(1) ul {
+  font-size: 0.8rem;
+  margin-top: -1rem;
+  margin-left: 1rem;
+}
+.footer nav:nth-of-type(1) p {
+  font-size: 0.9rem;
+}
+.footer .co {
+  /* border: 2px solid blue ; */
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+}
+.footer .co a i {
+  font-size: large;
+}
+/* copy write */
+.footer p {
+  font-size: 2rem;
+}
+.footer nav:nth-of-type(1) p {
+  font-size: 2rem;
+}
+/* עיצוב שורות שברשימה */
+.footer nav ul li {
+  font-size: small;
+}
+/* גודל הדף למסך קטן */
+@media (max-width: 500px) {
+  header .header1 {
+    width: 10%;
+  }
+}

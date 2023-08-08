@@ -1,0 +1,81 @@
+/* מדידות הדף */
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+/* עיצוב של התוכן הראשי בדף */
+main div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1rem 0 1rem 0rem;
+  justify-content: space-between;
+  background-color: rgb(245, 245, 245);
+}
+main div nav {
+  border: grey 0.5px solid;
+  padding: 0.5rem;
+}
+main div nav img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+main div nav p {
+  font-weight: 800;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+h3 {
+  text-align: center;
+}
+/* עיצוב כפתור */
+main div nav button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: red;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+/* עיצוב כפתור */
+main div nav button:hover {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  background-color: beige;
+  opacity: 0.5;
+}
+.sales {
+  text-decoration: line-through;
+  font-size: 2rem;
+}
+h3 {
+  font-size: 2rem;
+}
+.afterSale {
+  color: red;
+  font-size: 2rem;
+}
+/* עיצוב לתמונה  */
+img {
+  display: block;
+  max-width: 100%;
+  width: 150px;
+  height: auto;
+}
+/* גודל הקו */
+p {
+  font-size: 2rem;
+}
+/* גודל הדף למסך קטן */
+@media (max-width: 500px) {
+  main div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

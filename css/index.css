@@ -1,0 +1,124 @@
+/* מדידות הדף */
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+.container {
+  /* עיצוב לתמונה ברגע שמזזים העכבר על התמונה התמונה תיגדל */
+  width: 50%;
+  height: 500px;
+
+  margin: 30px auto;
+  border: 5px solid #cbcaca;
+
+  display: flex;
+}
+.container nav {
+  background-position: bottom center;
+  background-size: cover;
+  cursor: pointer;
+  flex: 1;
+  transition: flex 0.5s linear;
+}
+/* עיצוב לתמונה ברגע שמזזים העכבר על התמונה התמונה תיגדל */
+.container nav:nth-of-type(1) {
+  background-image: url(../img/aaa.png);
+}
+.container nav:nth-of-type(2) {
+  background-image: url(../img/tablets.jpg);
+}
+.container nav:nth-of-type(3) {
+  background-image: url(../img/Accessories1.jpg);
+}
+.container nav:hover {
+  flex: 5;
+}
+main {
+  background-color: rgb(245, 245, 245);
+  margin-top: -2rem;
+}
+/* כותרת  */
+h1 {
+  padding: 2rem;
+  font-size: 4rem;
+}
+/* עיצוב כפתור */
+main .btn {
+  width: auto;
+  font-size: 2rem;
+  background-color: black;
+  color: #cbcaca;
+  border-radius: 12px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* עיצוב כפתור */
+main .btn:hover {
+  opacity: 0.5;
+  padding: 0.2rem;
+}
+.table1 table {
+  margin-top: 5rem;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* עיצוב שורה ראשונה בטבלה */
+.table1 table th {
+  background-color: black;
+  color: aliceblue;
+}
+/* עיצוב שורות בטבלה */
+.table1 table th,
+td {
+  font-size: 4rem;
+  border: solid 1px black;
+}
+/* הזזת התוכן קצת פנימה  */
+main {
+  padding: 1rem;
+}
+/* גודל הדף למסך קטן */
+@media (max-width: 800px) {
+  .table1 table th,
+  td {
+    font-size: medium;
+  }
+  .container nav {
+    width: 200px;
+    height: 250px;
+  }
+  .container {
+    height: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  /* גודל הדף למסך קטן */
+  .table1 table th,   /* עיצוב הדף למסך קטן */
+  td {
+    font-size: small;
+  }
+  .container nav {
+    width: 100px;
+    height: 150px;
+  }
+  .container {
+    height: auto;
+  }
+  a {
+    font-size: 1rem;
+  }
+  .footer p {
+    font-size: 5px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  main .btn {
+    font-size: 0.5rem;
+    width: auto;
+  }
+}
